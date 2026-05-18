@@ -1,0 +1,378 @@
+% --- LaTeX CV Template - S. Venkatraman ---
+
+% --- Set document class and font size ---
+
+\documentclass[letterpaper, 11pt]{article}
+
+% --- Package imports ---
+
+\usepackage{hyperref, enumitem, longtable, amsmath, array}
+
+% --- Page layout settings ---
+
+% Set page margins
+\usepackage[left=0.7in, right=0.8in, bottom=.8in, top=0.8in, headsep=0in, footskip=.2in]{geometry}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.2}
+
+% --- Page formatting settings ---
+
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=MidnightBlue, urlcolor=MidnightBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% Define font size and color for section headings
+\newcommand{\headingfont}{\Large\color{OliveGreen}}
+
+% --- CV section settings ---
+
+% Note: each section of this table (Education, Awards, Publications etc.) is 
+% stored in a two-column table. The left-hand column is narrow (1 inch) and is 
+% meant to store dates. The right-hand column is wide (5.2 inches) and stores 
+% the main text.  Sections in which each entry might have multiple lines 
+% (e.g., Education) are stored in a 'SectionTable' environment). Sections in 
+% which each entry might just have one line are stored in a 'SectionTableSingleSpace'
+% environment. The only difference between the two environments is the line 
+% spacing between each entry. Both environments take one argument, which is the
+% title of the section. See main document for how these environments are used.
+
+% Define settings for left-hand column in which dates are printed
+\newcolumntype{R}{>{\raggedleft}p{1in}}
+
+% Define 'SectionTable' environment
+\newenvironment{SectionTable}[1]{
+	\renewcommand*{\arraystretch}{1.7}
+	\setlength{\tabcolsep}{10pt}
+	\begin{longtable}{Rp{5.4in}} & #1 \\}
+{\end{longtable}\vspace{-.3cm}}
+
+% Define 'SectionTableSingleSpace' environment
+\newenvironment{SectionTableSingleSpace}[1]{
+	\renewcommand*{\arraystretch}{1.2}
+	\setlength{\tabcolsep}{10pt}
+	\begin{longtable}{Rp{5.2in}} & #1 \\[0.6em]}
+{\end{longtable}\vspace{-.3cm}}
+
+% --- Document starts here ---
+
+\begin{document}
+
+% --- Name and contact information ---
+
+\begin{SectionTable}{\Huge Laura Caligaris} & 
+caligaris.laura15@gmail.com $\;\boldsymbol{\cdot}\;$
+\textbf{laura.caligaris2@unibo.it} \newline 
+\textbf{https://www.unibo.it/sitoweb/laura.caligaris2/} $\;\boldsymbol{\cdot}\;$ 
++39-3403152534 \newline
+Date and place of Birth: 15th of February 1994, Cagliari, Italy \newline
+Citizenship: Italian
+\end{SectionTable}
+
+% --- Section: Research interests ---
+
+\begin{SectionTable}{\headingfont Biography and Research interests}
+&I am a PhD candidate in Earth, Life and Environmental Sciences at the University of Bologna, with a background in bioinformatics and computational biology. My doctoral research focuses on the characterization of microbial communities in drinking water distribution systems through 16S and 18S rRNA amplicon sequencing, with particular attention to the ecology of opportunistic pathogens such as Legionella spp. and their interactions with eukaryotic hosts. During a visiting period at Eawag (Swiss Federal Institute of Aquatic Science and Technology), I expanded my expertise in cross-kingdom co-occurrence network inference and multivariate community ecology statistics. My broader interests include microbial ecology, metagenomics, and structural bioinformatics.
+\end{SectionTable}
+
+% --- Section: Research experience ---
+
+\begin{SectionTable}{\headingfont Publications}
+2026 &
+\textbf{Legionella petroniana sp. nov., a novel species isolated in Bologna, Italy: taxonomic, genomic and ecological insights in the era of environmental change.}\newline
+Cristino S, \textbf{Caligaris L}, Salaris S, Derelitto C, Bonincontro C, Marino F, Grottola A, Girolamini L.\newline
+\textbf{Improving Microbiological Monitoring of Hospital Surfaces: Loop-Mediated Isothermal Amplification (LAMP) as a New Approach for Rapid Nosocomial Pathogens Detection.}\newline
+Marino F, Bonincontro C, \textbf{Caligaris L}, Bellucci L, Derelitto C, Girolamini L, Cristino S.\\
+2025 & 
+\textbf{Optimization of Loop-Mediated Isothermal Amplification (LAMP) for the Rapid Detection of Nosocomial Pathogens on Environmental Surfaces} \newline
+Marino F, Bonincontro C, \textbf{Caligaris L}, Bellucci L, Derelitto C, Girolamini L, Cristino S. \newline
+\textit{International Journal of Molecular Sciences, 2025, 26, 5933, https://doi.org/10.3390/ijms26135933} \newline
+\textbf{Surfaces environmental monitoring of SARS-CoV-2: Loop mediated isothermal amplification (LAMP) and droplet digital PCR(ddPCR) in comparison with standard Reverse-Transcription quantitative polymerase chain reaction (RT-qPCR) techniques} \newline
+Spiteri S, Salamon I, Girolamini L, Pascale M R, Marino F, Derelitto C, \textbf{Caligaris L}, Paghera S, Ferracin M, Cristino S. \newline
+\textit{PLoS ONE, 2025 20(2): e0317228 http://doi.org/10.131/journal.pone.0317228}. \newline
+\textbf{Identification of Legionella by MALDI Biotyper through three preparation methods and an in-house library comparing phylogenetic and hierarchical cluster results} \newline
+Girolamini L, Caiazza P, Marino F, Pascale M R, \textbf{Caligaris L}, Paghera S, Ferracin M, Cristino S. \newline
+\textit{Scientific Report, 2025 15:2162, https://doi.org/10.1038/s41598-025-85251-4} \\
+2024 & 
+\textbf{An Innovative Approach for the Environmental Monitoring of SARS-CoV-2} \newline
+Spiteri S, Marino F, Girolamini L, Pascale M R, Derelitto C, \textbf{Caligaris L}, Paghera S, Cristino S. \newline
+\textit{Pathogens, 2024 13(11), 1022, https://doi.org/10.3390/pathogens13111022} \\
+
+%2020 & 
+%\textbf{Title of your third most recent research paper} \newline
+%First author, second author, third author, fourth author. \newline
+%\textit{Journal of something or the other}. \\
+
+%2019 & 
+%\textbf{Title of your fourth most recent research paper} \newline
+%First author, second author, third author, fourth author. \newline
+%\textit{Journal of something or the other}.
+\end{SectionTable}
+
+
+\begin{SectionTable}{\headingfont Posters}
+2026 &
+\textbf{The role of a metagenomic approach on water and swab samples 
+during a Pontiac fever epidemiological investigation} \newline
+Girolamini L, Bonincontro C, \textbf{Caligaris L}, Derelitto C, Sabelli C, Cristino S. \newline
+\textit{The 36th European Congress of Clinical Microbiology and Infectious Disease (ECCMID) congress, Munich, Germany, 17-21 April 2026}\newline
+\textbf{New insights into intraoperative airborne contamination in operating theatres: a
+multifactorial analysis integrating culture-based identification, metagenomic NGS, particle
+monitoring, and procedural factors} \newline
+Lanzoni L, Antonioli P, Campioni D, Girolamini L, \textbf{Caligaris L}, Derelitto C, Bonincontro C, Michilli A, Bassi C, Sabbioni S, Kucaj E, Oosthuizen J, Basson H, Brisbane J, Zaffagnini T, Cristino S. \newline
+\textit{The 36th European Congress of Clinical Microbiology and Infectious Disease (ECCMID) congress, Munich, Germany, 17-21 April 2026}\\
+
+2025 &
+\textbf{Microbiome profiling using 16S metagenomics approach to improve water quality assessment}\newline
+\textbf{Caligaris L}, Girolamini L, Bonincontro C, Derelitto C, Sabelli C, Cristino S.
+\newline
+\textit{ASM Microbe 2025 congress, American Society for Microbiology, United States, Los Angeles (CA), 19-23 June 2025} \newline
+\textbf{Environmental Investigation of the First Italian Legionella non-pneumophila outbreak:  suggested workflow on sampling and isolates identification}\newline
+Girolamini L, Spiteri S, Bonincontro C, \textbf{Caligaris L}, Derelitto C, La Fauci G, Belletti M, Resi D, Pandolfi P, and Cristino S. \newline
+\textit{ASM Microbe 2025 congress, American Society for Microbiology, United States, Los Angeles (CA), 19-23 June 2025} \newline
+\textbf{Airborne Microbial Investigation in Operating Rooms Using MALDI-TOF and Next-Generation Sequencing (NGS) to Reduce Surgical Site Infection Risk}\newline
+Lanzoni L, Antonioli P, Bonincontro C, \textbf{Caligaris L}, Derelitto C, Girolamini L, Sabbioni S, Cristino S. \newline
+\textit{ASM Microbe 2025 congress, American Society for Microbiology, United States, Los Angeles (CA), 19-23 June 2025} \newline
+\textbf{Evaluation of water quality through pipe microbiome characterization using 16S gene metagenomics approach} \newline
+\textbf{Caligaris L}, Girolamini L, Marino F, Bonincontro C, Derelitto C, Sabelli C, Cristino S.  \newline
+\textit{The 35th European Congress of Clinical Microbiology and Infectious Disease (ECCMID) congress, Wien, Austria, 11-15 April 2025} \\
+
+2024 &
+\textbf{Comparison between cultural method and isothermal loop mediated amplification (LAMP) for hospital environment monitoring} \newline
+Marino F, Pascale MR, Girolamini L, Spiteri S, Caiazza P, \textbf{Caligaris L}, Derelitto C., Bellucci L, Cristino S. \newline
+\textit{The 34th European Congress of Clinical Microbiology and Infectious Disease (ECCMID) congress, Barcelona, Spain, 27-30 April 2024} \newline
+\textbf{Legionella spp. identification by MALDI-TOF mass spectroscopy: improvement of technique and species relationship} \newline
+Girolamini L, Caiazza P, Marino F, \textbf{Caligaris L}, Pascale M R, Spiteri S, Derelitto C, and Cristino S. \newline
+\textit{The 34th European Congress of Clinical Microbiology and Infectious Disease (ECCMID) congress, Barcelona, Spain, 27-30 April 2024} \newline
+\textbf{Risk factors in endoscopes reprocessing: microbiological surveillance to support the device engineering} \newline
+Girolamini L, Pascale M R, Marino F, \textbf{Caligaris L}, Caiazza P, Spiteri S, Derelitto C, Bisognin F, Dal Monte P and Cristino S. \newline
+\textit{The 34th European Congress of Clinical Microbiology and Infectious Disease (ECCMID) congress, Barcelona, Spain, 27-30 April 2024} \\
+
+\end{SectionTable}
+
+% --- Section: Visiting Periods ---
+
+\begin{SectionTable}{\headingfont Visiting Periods}
+October 2025 -- April 2026 &
+\textbf{EAWAG - Swiss Federal Institute of Aquatic Science and Technology } -- Dübendorf, Switzerland \newline
+\textbf{Project Title:} Study of taxonomic, ecological and functional structure of water biofilms in taps through metagenomics data and interaction networks \newline
+Supervisor: Dr Hammes, F, Co-supervisor: Dr Gabrielli, M.
+\end{SectionTable}
+
+% --- Section: Education ---
+
+\begin{SectionTable}{\headingfont Education}
+November 2023 -- Present &
+\textbf{University of Bologna} -- Bologna, Italy \newline
+PhD Student in Earth, Life and Environment Sciences \newline
+\textbf{Project Title:} NGS and metagenomic applications for in situ evaluation of water supplies contamination according to the water safety plans -- EU Directive 2184/2020 and Italian Decree 18/2023, with COPAN Group. \newline
+\textbf{MaB Lab:}\newline
+https://bigea.unibo.it/it/ricerca/laboratori-di-ricerca/laboratorio-di-microbiologia-ambientale-e-biologia-molecolare-mab \\
+
+October 2020 -- November 2023 & 
+\textbf{University of Rome Tor Vergata} -- Rome, Italy \newline
+Master's degree in Bioinformatics \newline
+109/110 Italian grade \newline
+\textbf{Thesis Title:} Identification of potential inhibitors of human topoisomerase IB through virtual screening and classical molecular dynamics techniques.\newline
+Supervisor: Professor Falconi, M., E-mail: falconi@uniroma2.it \\
+
+2013 -- 2020 &
+\textbf{University of Pisa} -- Pisa, Italy \newline
+Bachelor's degree in Biological Science \newline 
+95/100 Italian Grade \newline
+\textbf{Thesis Title:} Function and Structure of PET Hydrolase (PETase): an enzyme for plastic's biodegradation. \newline
+Supervisor: Professor Camici, M.
+\end{SectionTable}
+
+% --- Un-comment the next few lines if you want to include some courses you've taken ---
+\begin{SectionTable}{}
+&\textbf{Selected coursework}
+\begin{itemize}[itemsep=0pt, leftmargin=*]
+\item 27/03/25 - 2/04/2025 - 20/05/2025 \textit{Artificial Intelligence Tools for Content Production in Academia}: Overview of AI tools that can be effectively used in the production of content in the academic field, offered by Prof. Paolo Torroni and Prof. Alessandro Gallo, University of Bologna;
+\item 08-09/10/24 \textit{Computational Pangenomics}: Pangenome and Pangenomics analysis course, offered by Dr. Andrea Guarracino, Alta Formazione Insubria;
+\item 11/06/2024 \textit{IR Biotyper}: Basic course on IR Biotyper, offered by Dr. Andrea Baldaccini, Bruker Daltonics;
+\item 5-7/02/24 \textit{Introduction to Python Programming}: Python language course, offered by Cineca HPC Department;
+\item 4-6/12/23 \textit{High Performance Bioinformatics}: introduction of cluster machines and bioinformatics optimization pipelines, offered by Cineca HPC Department; 
+\end{itemize}
+\end{SectionTable}
+
+% --- Section: Awards, scholarships, etc ---
+
+%\begin{SectionTableSingleSpace}{\headingfont Honors and scholarships}
+%2021 & 
+%Award 1 (Organization that gave you the award)\newline
+%\textit{Maybe this award needs a short description}. \\
+
+%2020 &
+%Award 2 (Organization that gave you the award; \href{https://en.wikibooks.org%/wiki/LaTeX/Hyperlinks}{link if you want}) \\
+
+%2019 &
+%Award 3 (Organization that gave you the award) \\
+
+%2018 &
+%Award 4 (Organization that gave you the award) \\
+
+%2017 &
+%Award 5 (Organization that gave you the award)
+%\end{SectionTableSingleSpace}
+
+% --- Section: Publications ---
+
+\begin{SectionTable}{\headingfont Internship}
+June 2022 -- October 2023 &
+\textbf{MPV and Human Topoisomerase Virtual Screening} \newline
+Supervisors: Professor Falconi Mattia (University of Rome Tor Vergata), Dr. Iacovelli Federico (University of Rome Tor Vergata). \newline
+In order to identify the best inhibitors of Monkey and Human topoisomerase type IB, Docking simulations and Molecular Dynamics were performed on 160 compounds of interest, known for their drug activity.\\ 
+%\href{https://en.wikibooks.org/wiki/LaTeX/Hyperlinks}{here}. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque. Integer pretium semper justo. \\
+
+November 2022 -- January 2023 &
+\textbf{Experimental laboratory experience on computational results}\newline
+Mentor: Professor Fiorani Paola (University of Rome Tor Vergata), Co-Tutor Chiccarella Giulia (University of Rome Tor Vergata). \newline
+Analysis of drugs on MPV and Human Topoisomerase: activity assay, religation and relaxation assay.\\
+
+November 2019 -- January 2020 &
+\textbf{Function and Structure of PET Hydrolase (PETase): an enzyme for plastic's biodegradation} \newline
+Supervisor: Professor Camici Marcella (University of Pisa). \newline
+Overview on Ideonella sakaiensis enzyme: function, structure and modification of key residues to enhance plastic degradation activity.  \\ %\href{https://en.wikibooks.org/wiki/LaTeX/Hyperlinks}{here}. Sed dolor lacus, %imperdiet non, ornare non, commodo eu, neque. Integer pretium semper justo. \\
+
+May 2017 -- July 2017 &
+\textbf{Antibodies analysis in autoimmune diseases}\newline
+Supervisor: Professor Paolicchi Aldo (University of Pisa).\newline
+Execution and analysis of immunological tests on blood samples.\\
+\end{SectionTable}
+
+% --- Section: Teaching experience ---
+
+%\begin{SectionTable}{\headingfont Teaching experience}
+%Fall 2020 & 
+%\textbf{Teaching assistant, STAT 123: Course name here (University)} \newline
+%Topics and description of your responsibilities. Aliquam volutpat est vel %massa. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque. \newline
+%\textit{Average student rating: X/5.} \\
+
+%Spring 2020 & 
+%\textbf{Teaching assistant, MATH 234: Course name here (University)} \newline
+%Topics and description of your responsibilities. Aliquam volutpat est vel %massa. Sed dolor lacus, imperdiet non, ornare non, commodo eu, neque. \newline
+%\textit{Average student rating: X/5.}
+%\end{SectionTable}
+
+% --- Section: Industry experience ---
+
+%\begin{SectionTable}{\headingfont Industry experience}
+%Summer 2020 &
+%\textbf{Name of company (Title of job or internship)} -- City, State \newline
+%Description of your responsibilities. Integer pretium semper justo. Proin %risus. Nullam id quam. Nam neque. Phasellus at purus et lib ero lacinia %dictum.  \\
+
+%Summer 2019 &
+%\textbf{Name of company (Title of job or internship)} -- City, State \newline
+%Description of your responsibilities. Integer pretium semper justo. Proin %risus. Nullam id quam. Nam neque. Phasellus at purus et lib ero lacinia %dictum.  \\
+
+%Summer 2018 &
+%\textbf{Name of company (Title of job or internship)} -- City, State \newline
+%Description of your responsibilities. Integer pretium semper justo. Proin %risus. Nullam id quam. Nam neque. Phasellus at purus et lib ero lacinia %dictum.  \\
+%\end{SectionTable}
+
+% --- Section: Talks and tutorials ---
+
+%\begin{SectionTable}{\headingfont Talks and tutorials}
+%Month Year &
+%Title of your most recent presentation \newline
+%\textit{Name of conference, workshop, seminar, etc., or a description} \\
+
+%Month Year &
+%Title of your second most recent presentation \newline
+%\textit{Name of conference, workshop, seminar, etc., or a description} \\
+
+%Month Year &
+%Title of your third most recent presentation \newline
+%\textit{Name of conference, workshop, seminar, etc., or a description} \\
+%\end{SectionTable}
+
+% --- Section: Mentorship and service ---
+
+\begin{SectionTable}{\headingfont Mentorship and service}
+16-18 February 2026 &
+\textbf{Microbiology Praktikum (Tutor) - ETH Zürich}\newline
+Support students on basic microbiology techniques to cultivate and select bacteria species. \\
+November 2022 -- June 2023 &
+\textbf{Structural Bioinformatic Course (Tutor) - University of Rome Tor Vergata} \newline
+Support students during practical lectures involving the use of main bioinformatics softwares and servers.\\
+\end{SectionTable}
+
+
+\begin{SectionTable}{\headingfont Other experiences}
+July 2019 &
+\textbf{University of Pisa and Aquilegia association (Botanical Guide)} \newline
+Managing and maintenance of Botanical Garden "Pania di Corfino" and tour guide. \\
+\end{SectionTable}
+
+% --- Section: Professional society memberships ---
+
+%\begin{SectionTable}{\headingfont Professional memberships}
+%Year -- Present &
+%Name of professional society \newline
+%\textit{Short description or conferences you attended.} \\
+
+%Year -- Present &
+%Name of professional society \newline
+%\textit{Short description or conferences you attended.} \\
+%\end{SectionTable}
+
+\begin{SectionTable}{\headingfont Technical skills}
+& \textbf{Programming languages} \newline
+Proficient in: Python, Ruby, C, R. \newline
+Basic knowledge of database management systems, MySQL and the SQL language. \newline
+Familiar with: HTML5, CSS, PHP. \\
+& \textbf{Softwares} \newline
+\textbf{Genomic and Metagenomic Bioinformatics:} Assembly, Quality and Annotation tools (FastQC, Trimmomatic, SPAdes, Pilon, Prokka, Busco, Abricate, Snippy, PGGB, Checkm2), Alignment tools (MUMmer, Bwa, Bowtie2, Samtools, Bcftools), Metagenomics and Amplicon Sequencing Analysis (Kraken2, Mothur, Qiime2, DADA2, phyloseq), Taxonomy (Fasttree, Picrust2, iTOL, PR2, GTDB), Co-occurrence network inference (SPIEC-EASI); \newline
+\textbf{Statistical Analysis:} Multivariate community ecology statistics (PERMANOVA/adonis2, Procrustes, Mantel test, Spearman correlation), alpha and beta diversity metrics (Shannon, Observed richness, Chao1, Bray-Curtis, Jaccard), data visualization and figure production (ggplot2, patchwork, vegan); \newline
+\textbf{Structural Bioinformatics:} Virtual Screening and Drug Design (Autodock Vina), Molecular dynamics and trajectory analysis (AMBER, GROMACS), processing of simulation data using Python programming and Bash scripting; \newline
+\textbf{Graphic visualization software:} PyMol, Chimera, VMD, Krona, iTOL; \newline
+\textbf{Scientific databases:} Knowledge and use of scientific databases and NCBI (e.g., PubMed, GenBank, Pubchem, PDB, UNIPROT, PR2, GTDB); \newline
+\textbf{Linux OS:} Bash scripting for data processing and use of basic Linux OS administration tools and text manipulation commands. Able to work on clusters and optimize computational resources with SLURM Scheduler. Able to work with Conda and Conda environments.\\
+
+& \textbf{Wet Lab skills}\newline
+Specific techniques for analyzing the potability of water intended for human consumption according to the directives D.Lgs. 31/2001, DM 14/06/17, EU 2020/2184, D.Lgs. 23/02/2023, and specific ISO standards (UNI EN ISO 19458:2006, UNI EN ISO 6222:2001, ISO 7899-2:2003, UNI EN ISO 16266:2008, UNI EN ISO 9308-1:2017, ISO 16140-2:2016): study of water distribution systems, development of sampling plans, and risk assessment plans in industrial, healthcare, social assistance, community, and dental clinic settings;\newline
+Specific techniques for the isolation, culture, and typing of Legionella spp. according to specific regulations: National Guidelines 2015, Regional Guidelines - Emilia-Romagna Region 2018, and specific ISO standard ISO 11731:2017: study of the distribution systems of hot and cold sanitary water for the prevention of Legionella spp., development of sampling plans, and risk assessment plans (DVR) in industrial, healthcare, social assistance, community, and dental clinic settings;\newline
+Techniques of spectrophotometric analysis by MALDI-TOF MS using the MALDI Biotyper® System (Bruker); construction of dendrograms; implementation of an in-house database;\newline
+Preparation of culture media for the growth of prokaryotic cells;\newline
+Extraction of prokaryotic DNA using standard methods or specific kits;\newline
+Quantification of nucleic acids (spectrophotometric methods and Qubit/Nanodrop technology);\newline
+Storage and disposal of waste according to current regulations.\\
+
+
+& \textbf{Languages} \newline
+English (C1)
+\begin{itemize}[itemsep=0pt, leftmargin=*]
+\item \textit{English}: IELTS course at AngloAmerican Centre of Cagliari,\newline
+via Mameli, n.46
+\end{itemize}
+French (A2)
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont Soft skills}
+
+& \textbf{Problem Solving and Organization}\newline
+Able to quick adapt to project changes and re-organized work.\\
+
+& \textbf{Communication (Writing/Speaking)}\newline
+Scientific presentations, exhibitions and workshop organization.\\
+
+& \textbf{Team Work}\newline
+Able to manage conflicts and work as part of a team.\\
+
+\end{SectionTable}
+
+\begin{SectionTable}{\headingfont Other interests}
+& I am a crochet-aholic girl. I love to create clothes or small handmade presents. In my free time I also enjoy going to the cinema and watching movies, series and animations. I like to walk in nature. 
+\end{SectionTable}
+
+% --- End of CV! ---
+
+\end{document}
